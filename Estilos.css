@@ -1,0 +1,469 @@
+.contenedor{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px  auto auto ;
+    grid-template-areas: "header header header"
+                        "section section section"
+                        "nav nav nav"
+                        "footer footer footer";
+    min-height: 100vh;
+}
+.contenedor .header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 40%;
+    padding: 20px;
+    margin: 0;
+}
+
+.header img {
+    width: 100%;
+    height: 50%;    
+    object-fit: cover;
+}
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    left: 35%;
+    transform: translateY(-30%);
+}
+
+.header nav ul li {
+    margin-right: 5%;
+}
+
+.header nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    padding: 10px 16px;
+    background-color: #bcc2bc;
+    border-radius: 5px;
+    display: block;
+    font-size: 18px;
+}
+.header,.section {
+    margin: 0;
+    padding: 0;
+}
+.section{
+    grid-area: section;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.section video{
+    width: 40%;
+    height: 200%;
+}
+h1, h2{
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    padding: 70px;
+    
+}
+
+nav img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav li:hover img {
+    transform: scale(1.2);
+}
+.visymis {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header" 
+                        "section section section"
+                        "footer footer footer";
+}
+.visymis header {
+    grid-area: header;
+    display: grid;
+    justify-content: space-evenly;   
+}
+.visymis header button {
+    grid-column-start: 9;
+    grid-column-end: 9;
+        width: 100%;
+        height: 30%;
+}
+
+.visymis header h1{
+    grid-column-start: 5;
+    grid-column-end: 5;
+    font-size: 60px;
+}
+.visymis section{
+    grid-area: section;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-rows: auto auto auto;
+    max-height: 550px;
+}
+.aside img{
+    grid-area: section;
+    display: grid;
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+}
+.visymis footer{
+    grid-area: footer;
+}
+
+.visymis1 header{
+    display: grid;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.visymis1 h1{
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.visymis1 button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 80px; 
+}
+
+.visymis1 img{
+    height: 325px;
+    width: 1500px;
+}
+
+.iglesia {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px 400px 200px 20px;
+    grid-template-areas: "header header header"
+                         "article section section"
+                         "p p p"
+                         "footer footer footer";
+}
+.iglesia header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.iglesia header button{
+    position: absolute;
+    right: 0;
+    top: 0.1;
+    height: 50px;
+    width: 80px;
+    
+}
+.section img {
+    position: static;
+    height: 400px;
+    width: 800px;
+    border-radius: 50px;
+}
+.iglesia section article iframe {
+    position: static;
+    border-radius: 50px;
+}
+.iglesia article{
+    grid-area: p;
+}
+.iglesia footer {
+    grid-area: footer;
+}
+.teleferico{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 125px 400px 190px 20px;
+    grid-template-areas: "header header header"
+                        "article section section"
+                        "p p p"
+                        "footer footer footer";
+}
+.teleferico header{
+    grid-area: header;
+}
+.teleferico header button {
+    position: absolute;
+    right: 0;
+    top: 0.1;
+    height: 50px;
+    width: 80px;
+
+}
+.teleferico .imagen{
+    grid-area: section;
+}
+.imagen img{
+    position: static;
+    height: 400px;
+    width: 800px;
+}
+.teleferico .section {
+    grid-area: article;
+}
+.section iframe {
+    position: static;
+    border-radius: 50px;
+}
+.teleferico article {
+    grid-area: p;
+}
+.teleferico footer{
+    grid-area: footer;
+}
+.parque{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px 400px 190px 20px;
+    grid-template-areas: "header header header"
+        "article section section"
+        "p p p"
+        "footer footer footer";
+}
+.parque header {
+    grid-area: header;
+}
+
+.parque header button {
+    position: absolute;
+    right: 0;
+    top: 0.1;
+    height: 50px;
+    width: 80px;
+
+}
+
+.parque .imagen1 {
+    grid-area: section;
+}
+
+.imagen1 img {
+    position: static;
+    height: 400px;
+    width: 800px;
+}
+
+.parque .section1 {
+    grid-area: article;
+}
+
+.section1 iframe {
+    position: static;
+    border-radius: 50px;
+}
+
+.parque article {
+    grid-area: p;
+}
+
+.parque footer {
+    grid-area: footer;
+}
+.MITAD{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px 400px 190px 20px;
+    grid-template-areas: "header header header"
+        "article section section"
+        "p p p"
+        "footer footer footer";
+}
+.MITAD header {
+    grid-area: header;
+}
+
+.MITAD header button {
+    position: absolute;
+    right: 0;
+    top: 0.1;
+    height: 50px;
+    width: 80px;
+
+}
+
+.MITAD .imagen2 {
+    grid-area: section;
+}
+
+.imagen2 img {
+    position: static;
+    height: 400px;
+    width: 800px;
+    border-radius: 200px;
+}
+
+.MITAD .section2 {
+    grid-area: article;
+}
+
+.section2 iframe {
+    position: static;
+    border-radius: 50px;
+}
+
+.MITAD article {
+    grid-area: p;
+}
+
+.MITAD footer {
+    grid-area: footer;
+}
+.panecillo{
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("imagenes/1-LOGO-FIESTAS-DE-QUITO-1.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    width: 99vw;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 125px 400px 190px 20px;
+    grid-template-areas: "header header header"
+        "article section section"
+        "p p p"
+        "footer footer footer";
+}
+.panecillo header {
+    grid-area: header;
+}
+
+.panecillo header button {
+    position: absolute;
+    right: 0;
+    top: 0.1;
+    height: 50px;
+    width: 80px;
+
+}
+
+.panecillo .imagen3 {
+    grid-area: section;
+}
+
+.imagen3 img {
+    position: static;
+    height: 400px;
+    width: 800px;
+    border-radius: 200px;
+}
+
+.panecillo .section3 {
+    grid-area: article;
+}
+
+.section3 iframe {
+    position: static;
+    border-radius: 50px;
+}
+
+.panecillo article {
+    grid-area: p;
+}
+
+.panecillo footer {
+    grid-area: footer;
+}
