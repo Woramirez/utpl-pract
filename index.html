@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina web</title>
     <link rel="stylesheet"type="text/css"href="Estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
   </head>
   <body class="contenedor">
     <header class="header">
@@ -14,11 +18,9 @@
         alt="logo-fista-quito"
         width="40%"
       />
-      <nav>
-        <ul>
-          <li><a href="mision.html">MISIÓN</a></li>
-          <li><a href="vision.html">VISIÓN</a></li>
-        </ul>
+      <nav class="nav nav-pills flex-column flex-sm-row">
+        <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="mision.html">MISIÓN</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="vision.html">VISIÓN</a>
       </nav>
     </header>
     <section class="section">
@@ -42,6 +44,42 @@
         <h2>LUGARES QUE DEBES VISITAR</h2>
       </aside>
     </section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="iglesias.html">iglesia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="teleferico.html">Teleferico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mitadMun.html">Mitad del Mundo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="panecillo.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Panecillo
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="parques.html">Action</a></li>
+                <li><a class="dropdown-item" href="panecillo.html">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true"> </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder=" " aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <nav>
       <ul>
         <li>
